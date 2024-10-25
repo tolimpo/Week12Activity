@@ -10,6 +10,6 @@ predicate isFuncOver10(Function func) {
   func.getNumLines() > 10
 }
 
-from Function func, Function callee
+from Function func
 where isFuncOver10(func)
 select func, "is over 10 lines"
